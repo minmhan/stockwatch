@@ -10,8 +10,11 @@
                     <div class="form-group">
                         <label for="stock-symbol">Symbol</label>
                         <!-- [1] Use ng-options with label syntax and bs-typeahead directive -->
-                        <input type="text" class="form-control" id="stock-symbol" placeholder="Stock Symbol" ng-model="newStock.company" ng-options="company as company.label for company in companies"
-                            bs-typeahead required> </div>
+                        <!-- <input type="text" class="form-control" id="stock-symbol" placeholder="Stock Symbol" ng-model="newStock.company" ng-options="company as company.label for company in companies"
+                            bs-typeahead required> 
+                        -->
+                        <select class="form-control" id="stock-symbol" aria-placeholder="Stock Symbol" ng-model="newStock.company"></select>
+                    </div>
                     <!-- [2] Only accept numbers for shares owned -->
                     <div class="form-group">
                         <label for="stock-shares">Shares Owned</label> <input type="number" class="form-control" id="stock-shares"
