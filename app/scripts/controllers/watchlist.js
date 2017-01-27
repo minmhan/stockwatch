@@ -20,7 +20,7 @@ angular.module('stockwatchApp')
     });
 
     $scope.showStockModal = function () {
-      alert('show');
+      //alert('show');
       addStockModal.$promise.then(addStockModal.show); 
     };
 
